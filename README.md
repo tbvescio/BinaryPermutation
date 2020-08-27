@@ -1,12 +1,13 @@
 # BinaryPermutation
 
-- Script that calculate all the posible binary combinations  with n  decimals.
+- Script that calculate all the posible binary combinations with N numbers.
 
 
 ### Example:
-- Result with 3 decimals:
+- Result with 3 variables:
 
-	-	['0', '0', '0']
+	```sh
+	['0', '0', '0']
 	['0', '0', '1']
 	['0', '1', '0']
 	['0', '1', '1']
@@ -14,3 +15,4 @@
 	['1', '0', '1']
 	['1', '1', '0']
 	['1', '1', '1']
+	```

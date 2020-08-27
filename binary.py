@@ -1,25 +1,11 @@
+entrada = int(input("Enter the number of variables: "))
 
-entrada = int(input("Ingrese numero de variables: "))
+for i in range(2**entrada): 
+	row = list(bin(i)[2:]) #removes the '0b' from the result of bin()
+	for x in range(entrada-len(row)): 
+		row.insert(0, '0')
+	print(row)
 
-
-def binary(x):
-    s = bin(x)
-    return s[2:]
-
-
-def main():
-
-	vector = []
-	numero = 0
-	for i in range(2**entrada): #se repite la cantidad de combinaciones
-	    numero = str(binary(i)) 
-	    numero = list(numero)
-	    for x in range(entrada-len(numero)): #en los espacios que sobran pone 0
-	        numero.insert(0, '0')
-	    
-	    print(list(numero))
-
-main()
 
 
 
